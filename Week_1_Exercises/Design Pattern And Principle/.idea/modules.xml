@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Design Pattern And Principle.iml" filepath="$PROJECT_DIR$/.idea/Design Pattern And Principle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FactoryMethodPatternExample/FactoryMethodPatternExample.iml" filepath="$PROJECT_DIR$/FactoryMethodPatternExample/FactoryMethodPatternExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SingletonMethodPatternExample/SingletonMethodPatternExample.iml" filepath="$PROJECT_DIR$/SingletonMethodPatternExample/SingletonMethodPatternExample.iml" />
+    </modules>
+  </component>
+</project>
