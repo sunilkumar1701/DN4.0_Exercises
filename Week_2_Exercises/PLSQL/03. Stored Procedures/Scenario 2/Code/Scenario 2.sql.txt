@@ -1,0 +1,50 @@
+-- Create Accounts table
+CREATE TABLE Accounts (
+    AccountID INT PRIMARY KEY,
+    CustomerName VARCHAR(100),
+    AccountType VARCHAR(20), -- e.g., 'Savings' or 'Checking'
+    Balance DECIMAL(12,2)
+);
+
+-- Insert sample accounts
+INSERT INTO Accounts VALUES 
+(1, 'Alice', 'Savings', 1000.00),
+(2, 'Bob', 'Savings', 1500.00),
+(3, 'Charlie', 'Checking', 500.00),
+(4, 'Dave', 'Savings', 2000.00);
+
+-- Create Employees table
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Department VARCHAR(50),
+    Salary DECIMAL(12,2)
+);
+
+-- Insert sample employees
+INSERT INTO Employees VALUES
+(1, 'John Smith', 'Sales', 5000.00),
+(2, 'Jane Doe', 'Sales', 5500.00),
+(3, 'Mark Lee', 'HR', 6000.00);
+
+
+CREATE OR REPLACE PROCEDURE UpdateEmployeeBonus (
+    p_department IN VARCHAR2,
+    p_bonus_pct  IN NUMBER  -- e.g., 0.10 for 10%
+) AS
+BEGIN
+    UPDATE Employees
+    SET Salary = Salary + (Salary * p_bonus_pct)
+    WHERE Department = p_department;
+
+    DBMS_OUTPUT.PUT_LINE('Bonus applied to ' || p_department || ' department.');
+END;
+/
+
+BEGIN
+    UpdateEmployeeBonus('Sales', 0.10);
+END;
+/
+
+SELECT * FROM Employees;
+
