@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="AssertionsTest" />
+        <module name="LoggingExample" />
+        <module name="AAA_Pattern" />
+        <module name="MockingAndStubbing" />
+        <module name="JUnitExample" />
+        <module name="VerifyingInteractions" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
