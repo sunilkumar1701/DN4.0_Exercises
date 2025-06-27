@@ -1,4 +1,5 @@
 package org.example;
 
-public class ExternalApi {
+public interface ExternalApi {
+    String getData();
 }
